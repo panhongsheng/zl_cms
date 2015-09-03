@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS `ZLCMS_message_data`;

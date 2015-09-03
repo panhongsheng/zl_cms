@@ -1,0 +1,1 @@
+<?php defined('IN_ZLCMS') or exit('No permission resources.');?>

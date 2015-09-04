@@ -223,7 +223,7 @@ class admin {
  	 * 检查hash值，验证用户数据安全性
  	 */
 	final private function check_hash() {
-		if(preg_match('/^public_/', ROUTE_A) || ROUTE_M =='admin' && ROUTE_C =='index' || in_array(ROUTE_A, array('login'))) {
+		if(preg_match('/^public_/', ROUTE_A) || ROUTE_M =='zl_admin' && ROUTE_C =='index' || in_array(ROUTE_A, array('login'))) {
 			return true;
 		}
 		if(isset($_GET['pc_hash']) && $_SESSION['pc_hash'] != '' && ($_SESSION['pc_hash'] == $_GET['pc_hash'])) {

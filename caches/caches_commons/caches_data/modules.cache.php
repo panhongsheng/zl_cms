@@ -337,30 +337,6 @@ return array (
     'installdate' => '2010-09-06',
     'updatedate' => '2010-09-06',
   ),
-  'vote' => 
-  array (
-    'module' => 'vote',
-    'name' => '投票',
-    'url' => '',
-    'iscore' => '0',
-    'version' => '1.0',
-    'description' => '',
-    'setting' => 'array (
-  1 => 
-  array (
-    \'default_style\' => \'default\',
-    \'vote_tp_template\' => \'vote_tp\',
-    \'allowguest\' => \'1\',
-    \'enabled\' => \'1\',
-    \'interval\' => \'1\',
-    \'credit\' => \'1\',
-  ),
-)',
-    'listorder' => '0',
-    'disabled' => '0',
-    'installdate' => '2010-09-06',
-    'updatedate' => '2010-09-06',
-  ),
   'message' => 
   array (
     'module' => 'message',
@@ -407,20 +383,6 @@ return array (
     'disabled' => '0',
     'installdate' => '2010-10-20',
     'updatedate' => '2010-10-20',
-  ),
-  'wap' => 
-  array (
-    'module' => 'wap',
-    'name' => '手机门户',
-    'url' => 'wap/',
-    'iscore' => '0',
-    'version' => '1.0',
-    'description' => '手机门户',
-    'setting' => '',
-    'listorder' => '0',
-    'disabled' => '0',
-    'installdate' => '2015-02-02',
-    'updatedate' => '2015-02-02',
   ),
   'tag' => 
   array (

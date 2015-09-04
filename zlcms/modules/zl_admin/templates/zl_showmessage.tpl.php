@@ -52,6 +52,8 @@
 </div>
 <!-- END JAVASCRIPTS -->
 <script src="/statics/newstyle/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<?php if($returnjs) { ?> <script style="text/javascript"><?php echo $returnjs;?></script><?php } ?>
+<?php if ($dialog):?><script style="text/javascript">window.top.right.location.reload();window.top.art.dialog({id:"<?php echo $dialog?>"}).close();</script><?php endif;?>
 <script type="text/javascript">
     <?php if($url_forward&&$url_forward!='goback'){?>
      setTimeout(location.href ='<?php echo $url_forward?>',<?php echo $ms?>);

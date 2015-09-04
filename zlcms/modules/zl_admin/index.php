@@ -2,6 +2,7 @@
 defined('IN_ZLCMS') or exit('No permission resources.');
 pc_base::load_app_class('admin','zl_admin',0);
 class index extends admin {
+    private $times_db;
 	public function __construct() {
 		parent::__construct();
 		$this->db = pc_base::load_model('admin_model');

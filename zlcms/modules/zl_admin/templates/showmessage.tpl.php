@@ -42,11 +42,5 @@ a:hover,a:active{color:#ff6600;text-decoration: underline}
 	<?php if ($dialog):?><script style="text/javascript">window.top.right.location.reload();window.top.art.dialog({id:"<?php echo $dialog?>"}).close();</script><?php endif;?>
         </div>
 </div>
-<script style="text/javascript">
-	function close_dialog() {
-		window.top.right.location.reload();window.top.art.dialog({id:"<?php echo $dialog?>"}).close();
-	}
-</script>
-
 </body>
 </html>

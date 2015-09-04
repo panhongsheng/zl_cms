@@ -5,7 +5,7 @@
 <!-- BEGIN HEAD -->
 <head>
     <meta charset="utf-8" />
-    <title>zlcms</title>
+    <title><?php echo L('admin_site_title')?></title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="description" />
     <meta content="" name="author" />
@@ -69,13 +69,7 @@
                 <i class="icon-angle-down"></i>
             </a>
             <ul class="dropdown-menu">
-                <li><a href="extra_profile.html"><i class="icon-user"></i> 拓展1</a></li>
-                <li><a href="page_calendar.html"><i class="icon-calendar"></i> 拓展2</a></li>
-                <li><a href="inbox.html"><i class="icon-envelope"></i> 拓展3</a></li>
-                <li><a href="#"><i class="icon-tasks"></i> 拓展4</a></li>
-                <li class="divider"></li>
                 <li><a href="?m=zl_admin&c=index&a=public_logout"><i class="icon-key"></i> <?php echo L('exit')?></a></li>
-                <li><a href="javascript:;" onclick="lock_screen()"><i class="icon-lock"></i> <?php echo L('lockscreen')?></a></li>
             </ul>
         </li>
         <!-- END USER LOGIN DROPDOWN -->
@@ -128,10 +122,6 @@
 </div>
 <!-- END CONTAINER -->
 <!-- BEGIN FOOTER -->
-<style>
-
-
-</style>
 <div class="footer navbar-fixed-bottom">
     <div class="footer-inner navbar" style="margin-bottom: 0px;">
         <div class="nav" id="panellist">
@@ -234,7 +224,6 @@
         strs=str.toString().split(","); //字符分割
         var heights = strs[0]-190,
         Body = $('body');
-
         $('.page-content').css('min-height',strs[0]-80+'px');
         $('#rightMain').height(heights);
         $('#main_center').height(heights);
